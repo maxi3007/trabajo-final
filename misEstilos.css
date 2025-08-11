@@ -1,0 +1,361 @@
+htmlClaro, puedo ayudarte a agregar más contenido relacionado con los jugadores, los partidos y más información sobre la historia y las imágenes del estadio.
+
+Te sugiero agregar una nueva sección para los **jugadores destacados** y **partidos históricos**, y también puedes ampliar la información de la **historia** y las **imágenes del estadio**.
+
+Aquí tienes una versión ampliada de tu código con los nuevos datos:
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Club Atlético River Plate</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #bf0000;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav {
+      background-color: #8c0000;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #bf0000;
+      border-bottom: 2px solid #bf0000;
+      padding-bottom: 5px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 10px 0;
+    }
+
+    footer {
+      background-color: #8c0000;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 30px;
+    }
+
+    /* PSEUDO-CLASES */
+    ul > li:first-of-type {
+      color: red;
+    }
+
+    ul > li:last-of-type {
+      color: orange;
+    }
+
+    li:last-child {
+      color: blue;
+    }
+
+    ol.listaOrdenadaPrincipal li:nth-child(3),
+    ol.listaOrdenadaPrincipal li:nth-child(15) {
+      color: red;
+      background-color: black;
+    }
+
+    /* Elementos pares */
+    ol.listaOrdenadaPrincipal li:nth-child(2n){
+      color: orange;
+    }
+
+    /* Elementos impares */
+    ol.listaOrdenadaPrincipal li:nth-child(2n+1){
+      color: violet;
+    }
+
+    /* Estilos para el div cuadrado */
+    .fondoRojo {
+      background-color: red;
+    }
+
+    .letraBlanca {
+      color: white;
+    }
+
+    .divCuadrado {
+      width: 250px;
+      height: 250px;
+      margin: 20px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      position: relative;
+      text-align: center;
+    }
+
+    .divCuadrado.letraBlanca.fondoRojo:hover {
+      background-color: blue;
+    }
+
+    /* Pseudo-elementos */
+    .divCuadrado.letraBlanca.fondoRojo::after {
+      content: " Esto es texto extra después!";
+      display: block;
+      margin-top: 10px;
+      font-size: 0.9em;
+    }
+
+    .divCuadrado.letraBlanca.fondoRojo:hover::before {
+      content: "Esto es texto extra antes!";
+      display: block;
+      margin-bottom: 10px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Club Atlético River Plate</h1>
+    <p>El Más Grande, Lejos</p>
+  </header>
+
+  <nav>
+    <a href="#historia">Historia</a>
+    <a href="#titulos">Títulos</a>
+    <a href="#jugadores">Jugadores</a>
+    <a href="#partidos">Partidos Históricos</a>
+    <a href="#estadio">Estadio</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <div class="container">
+    <section id="historia">
+      <h2>Historia</h2>
+      <p>
+        Fundado el 25 de mayo de 1901, River Plate es uno de los clubes más importantes y populares de Argentina y Sudamérica.
+      </p>
+      <p>
+        A lo largo de su historia, River Plate ha sido el equipo más laureado en el fútbol argentino, destacándose por su éxito tanto en competencias locales como internacionales. A lo largo de su existencia, ha pasado por diferentes épocas doradas, con jugadores de talla mundial como Alfredo Di Stéfano, Daniel Passarella, Ariel Ortega, entre otros.
+      </p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Logo_River_Plate.png/600px-Logo_River_Plate.png" alt="Escudo de River Plate">
+    </section>
+
+    <section id="titulos">
+      <h2>Títulos Destacados</h2>
+      <ul>
+        <li>38 Ligas Argentinas</li>
+        <li>4 Copas Libertadores</li>
+        <li>1 Copa Intercontinental</li>
+        <li>3 Copas Sudamericanas y Recopas</li>
+        <li>Copas nacionales</li>
+      </ul>
+
+      <h3>Lista Ordenada con estilos (Pseudo-clases)</h3>
+      <ol class="listaOrdenadaPrincipal">
+        <li>titulo 1</li>
+        <li>Título 2</li>
+        <li>Título 3</li>
+        <li>Título 4</li>
+        <li>Título 5</li>
+        <li>Título 6</li>
+        <li>Título 7</li>
+        <li>Título 8</li>
+        <li>Título 9</li>
+        <li>Título 10</li>
+        <li>Título 11</li>
+        <li>Título 12</li>
+        <li>Título 13</li>
+        <li>Título 14</li>
+        <li>Título 15</li>
+      </ol>
+    </section>
+
+    <section id="jugadores">
+      <h2>Jugadores Destacados</h2>
+      <p>
+        A lo largo de la historia, River Plate ha contado con figuras legendarias que marcaron una huella indeleble en el fútbol mundial. Algunos de los jugadores más destacados incluyen:
+      </p>
+      <ul>
+        <li>Alfredo Di Stéfano</li>
+        <li>Daniel Passarella</li>
+        <li>Enzo Francescoli</li>
+        <li>Ariel Ortega</li>
+        <li>Martín Palermo</li>
+      </ul>
+      <h3>Imágenes de algunos jugadores legendarios</h3>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Alfredo_di_Stefano.jpg/1200px-Alfredo_di_Stefano.jpg" alt="Alfredo Di Stefano">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Passarella.jpg" alt="Daniel Passarella">
+    </section>
+
+    <section id="partidos">
+      <h2>Partidos Históricos</h2>
+      <p>
+        A lo largo de los años, River Plate ha disputado innumerables partidos que quedarán en la historia del club y del fútbol mundial. Algunos de los más memorables incluyen:
+      </p>
+      <ul>
+        <li>Final Copa Libertadores 1996 contra Vélez Sarsfield</li>
+        <li>Superclásico 2015, donde se consagró campeón del torneo argentino</li>
+        <li>Partido contra Boca Juniors en la Final de la Copa Libertadores 2018, la victoria más emblemática del siglo XXI.</li>
+      </ul>
+    </section>
+
+    <section id="estadio">
+      <h2>Estadio Monumental</h2>
+      <p>
+        El Estadio Monumental "Más Monumental" es el estadio más grande de Sudamérica, con capacidad para más de 84.000 espectadores. Es considerado uno de los templos más importantes del fútbol mundial.
+      </p>
+      <p>
+        En este estadio se han jugado algunos de los partidos más importantes de la historia del fútbol, incluyendo la final de la Copa del Mundo de 1978, en la que Argentina se consagró campeona.
+      </p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Estadio_Monumental_River_Plate_2023.jpg/800px-Estadio_Monumental_River_Plate_2023.jpg" alt="Estadio Monumental">
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>
+        Sitio oficial: <a href="https://www
+```
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #bf0000;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+nav {
+  background-color: #8c0000;
+  text-align: center;
+  padding: 10px 0;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+section {
+  margin-bottom: 30px;
+}
+h2 {
+  color: #bf0000;
+  border-bottom: 2px solid #bf0000;
+  padding-bottom: 5px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+footer {
+  background-color: #8c0000;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 30px;
+}
+/* Galería */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+.galeria img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.galeria img:hover {
+  transform: scale(1.05);
+}
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+}
+.lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+}
+.cerrar {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+/* Video responsivo */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
